@@ -1,0 +1,87 @@
+@font-face {
+    font-family: inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: inter;   
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Black: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+}
+
+#profileImg {
+    border-radius: 50%;
+    display: block;
+    max-width: 100%;
+}
+.container {
+    background-color: var(--Black);
+    max-width: 400px;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+.profile {
+    padding-top: 2rem;
+    margin: auto;
+    width: 20%;
+}
+.name {
+    font-weight: 400;
+    color: var(--White);
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+.location {
+    margin-top: 0.25rem;
+    color: var(--Green);
+}
+.desc {
+    margin-top: 1rem;
+    font-size: 14px;
+    color: var(--White);
+    font-weight: 300;
+    margin-bottom: 1rem;
+    
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    background-color:var(--Dark-Grey);
+    color: var(--White);
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 1rem 7rem;
+    text-align: center;
+    margin: 8px 20px;
+    text-wrap: nowrap;
+    font-weight: 400;
+}
+.btn:hover {
+    background-color: var(--Green);
+    color: var(--Black);
+}
+#lastBtn {
+    margin-bottom: 2rem;
+}
+@media (max-width: 540px)
+{
+    
+}
