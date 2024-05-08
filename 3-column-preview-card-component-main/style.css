@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.container {
+    display: flex;
+    width: 60%;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    gap: 2rem;
+}
+.sedans {
+    background-color: var(--Bright-orange);
+}
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+.card > img {
+    max-width: 100%;
+    display: block;
+}
+.desc{
+    color: var(--Transparent-white-paragraphs);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    
+}
+h1 {
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+button {
+    border: none;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    font-family: "Lexend Deca", sans-serif;
+    padding: .75rem 2rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+.sedan {
+    color: var(--Bright-orange);
+}
+.suv {
+    color: var(--Dark-cyan);
+    
+}
+.lux {
+    color: var(--Very-dark-cyan);
+}
+.btn > .sedan:hover {
+    background-color: var(--Bright-orange);
+    cursor: pointer;
+    color: white;
+    border: 1px solid;
+}
+.btn > .suv:hover {
+    background-color: var(--Dark-cyan);
+    cursor: pointer;
+    color: white;
+    border: 1px solid;
+}
+.btn > .lux:hover {
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
+    color: white;
+    border: 1px solid;
+}
+@media  only screen and (max-width:900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+}
