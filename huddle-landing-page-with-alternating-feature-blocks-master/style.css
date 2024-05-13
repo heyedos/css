@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:wght@600&display=swap');
+:root {
+    --Very-Pale-white: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish: hsl(208, 11%, 55%);
+    --Pink: hsl(322, 100%, 66%);
+}
+body {
+    font-size: 18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+p {
+    color: var(--Grayish);
+}
+.section-1 {
+    background-color: var(--Very-Pale-white);
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+}
+button {
+    border: 0;
+    background-color: white;
+    color: black;
+}
+.header-btn {
+    background-color: white;
+    padding: 1rem 5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 20px 0px hsl(208, 11%, 55%,0.3);
+    
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+.left > p {
+    width: 72.5%;
+}
+.left > h1 {
+    width: 75%;
+    font-size: 2.5rem;
+}
+.right {
+    width: 50%;
+}
+.left-btn > button {
+    background-color: var(--Pink);
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 2rem;
+    color: var(--Very-Pale-white);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 2.5rem;
+    margin-bottom: 15rem;
+}
+.card {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 2rem;
+    padding-left: 7.5rem;
+    justify-content: space-between;
+    box-shadow: 0px 0px 4px 0px hsl(208, 11%, 55%,0.3);
+    border-radius: 1rem;
+}
+.left-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+.left-card > p {
+    width: 80%;
+}
+.right-card {
+    width: 40%;
+}
+#left-card {
+    width: 40%;
+}
+#right-card {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#right-card > p {
+    width: 87.5%;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-Dark-Cyan);
+    padding-left: 7.5rem;
+    padding-top: 15rem;
+    padding-bottom: 7.5rem;
+    padding-right: 1rem;
+    position: relative;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 35%;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.location > p {
+    width: 75%;
+}
+.location > img {
+    margin-bottom: 3rem;
+}
+.info > p {
+    color: var(--Very-Pale-white);
+}
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-icon > svg {
+    width: 15px;
+}
+.footer-icon > svg > path {
+    fill: white;
+}
+#face > svg {
+    fill: var(--Very-Pale-white);
+}
+.footer-mid {
+    display: flex;
+    gap: 5rem;
+    color: var(--Very-Pale-white);
+}
+li {
+    list-style: none;
+    margin-top: 1rem;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    height: 6rem;
+    gap: 1rem;
+}
+.footer-RB > p {
+    color: var(--Very-Pale-white);
+}
+.footer-RB {
+    padding-top: 10rem;
+}
+svg > path {
+    fill: #fff;
+}
+.bottom-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: white;
+    padding: 3rem 7.5rem;
+    border-radius: 1rem;
+    bottom: 30rem;
+    left: 26.5rem;
+}
+.bottom-card-btn > button {
+    border: 0;
+    padding: 1.5rem 5rem;
+    border-radius: 2rem;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-white);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
